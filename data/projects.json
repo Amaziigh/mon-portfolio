@@ -1,22 +1,16 @@
 {
   "projects": [
     {
-      "name": "notes-cli",
-      "description": "CLI pour gérer des notes en ligne de commande.",
-      "tags": ["Python", "CLI"],
-      "url": "https://github.com/Amaziigh/notes-cli"
-    },
-    {
-      "name": "hello-python",
-      "description": "Script Python simple pour apprendre les bases du langage.",
-      "tags": ["Python"],
-      "url": "https://github.com/Amaziigh/hello-python"
-    },
-    {
       "name": "mon-portfolio",
-      "description": "Portfolio développeur construit avec Claude Code. Site statique responsive avec dark mode.",
+      "description": "Portfolio développeur — HTML/CSS/JS vanilla.",
       "tags": ["HTML", "CSS", "JavaScript"],
       "url": "https://github.com/Amaziigh/mon-portfolio"
+    },
+    {
+      "name": "mon-premier-rag",
+      "description": "Premier projet de Retrieval-Augmented Generation en Python.",
+      "tags": ["Python"],
+      "url": "https://github.com/Amaziigh/mon-premier-rag"
     }
   ]
 }
