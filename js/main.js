@@ -143,10 +143,11 @@
                 '<h3 class="card__title">' + escapeHtml(project.name) + '</h3>' +
                 '<p class="card__description">' + escapeHtml(project.description) + '</p>' +
                 '<ul class="card__tags card__tags--spaced">' + tagsHtml + '</ul>' +
-                '<a href="' + encodeURI(project.url) + '" class="card__link" target="_blank" rel="noopener noreferrer">' +
-                    'Voir le projet ' + escapeHtml(project.name) +
-                    '<span class="sr-only"> (s\'ouvre dans un nouvel onglet)</span>' +
-                '</a>' +
+                (project.url ?
+                    '<a href="' + encodeURI(project.url) + '" class="card__link" target="_blank" rel="noopener noreferrer">' +
+                        'Voir le projet ' + escapeHtml(project.name) +
+                        '<span class="sr-only"> (s\'ouvre dans un nouvel onglet)</span>' +
+                    '</a>' : '') +
             '</div>' +
         '</article>';
     }
