@@ -1,7 +1,3 @@
-# robots.txt pour amazigh.dev
-
 User-agent: *
 Allow: /
-
-# Sitemap
-Sitemap: https://amazigh.dev/sitemap.xml
+Sitemap: https://amazai.studio/sitemap.xml
