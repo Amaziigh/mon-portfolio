@@ -936,4 +936,61 @@ section {
     .blog__list {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .services__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ==========================================================================
+   Services
+   ========================================================================== */
+
+.services {
+    padding: var(--spacing-xl) var(--spacing-md);
+    max-width: var(--max-width-content);
+    margin: 0 auto;
+}
+
+.services__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+}
+
+.service-card {
+    background-color: var(--color-card-bg);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-md);
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--transition-base), box-shadow var(--transition-base), background-color var(--transition-base);
+}
+
+.service-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.service-card__title {
+    color: var(--color-accent);
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--spacing-sm);
+    transition: color var(--transition-base);
+}
+
+.service-card__description {
+    color: var(--color-text-muted);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-normal);
+    margin-bottom: var(--spacing-sm);
+    transition: color var(--transition-base);
+}
+
+.service-card__clients {
+    color: var(--color-text-muted);
+    font-size: var(--font-size-sm);
+    font-style: italic;
+    opacity: 0.8;
+    transition: color var(--transition-base);
 }
