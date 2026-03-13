@@ -994,3 +994,115 @@ section {
     opacity: 0.8;
     transition: color var(--transition-base);
 }
+
+/* ==========================================================================
+   Parcours — Timeline
+   ========================================================================== */
+
+.parcours {
+    padding: var(--spacing-xl) var(--spacing-md);
+    max-width: var(--max-width-medium);
+    margin: 0 auto;
+}
+
+.timeline {
+    position: relative;
+    margin-top: var(--spacing-lg);
+    padding-left: var(--spacing-md);
+    border-left: 2px solid var(--color-border);
+}
+
+.timeline__item {
+    position: relative;
+    margin-bottom: var(--spacing-lg);
+}
+
+.timeline__item::before {
+    content: '';
+    position: absolute;
+    left: calc(-1 * var(--spacing-md) - 5px);
+    top: 0.4rem;
+    width: 10px;
+    height: 10px;
+    background-color: var(--color-accent);
+    border-radius: 50%;
+}
+
+.timeline__date {
+    display: inline-block;
+    color: var(--color-accent);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-semibold);
+    margin-bottom: var(--spacing-xs);
+}
+
+.timeline__title {
+    color: var(--color-text);
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--spacing-xs);
+    transition: color var(--transition-base);
+}
+
+.timeline__details {
+    list-style: none;
+    padding: 0;
+    color: var(--color-text-muted);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-relaxed);
+    transition: color var(--transition-base);
+}
+
+.timeline__details li {
+    padding-left: 1rem;
+    position: relative;
+    margin-bottom: 0.25rem;
+}
+
+.timeline__details li::before {
+    content: '—';
+    position: absolute;
+    left: 0;
+    color: var(--color-accent);
+}
+
+/* ==========================================================================
+   Stack technique
+   ========================================================================== */
+
+.stack {
+    margin-top: var(--spacing-xl);
+}
+
+.stack__title {
+    color: var(--color-text);
+    font-size: var(--font-size-2xl);
+    margin-bottom: var(--spacing-md);
+    text-align: center;
+    transition: color var(--transition-base);
+}
+
+.stack__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--spacing-xs);
+    list-style: none;
+    padding: 0;
+}
+
+.stack__tag {
+    background-color: var(--color-accent-alpha);
+    color: var(--color-accent);
+    padding: 0.4rem 1rem;
+    border-radius: var(--radius-sm);
+    font-size: var(--font-size-sm);
+    transition: background-color var(--transition-base), color var(--transition-base);
+}
+
+/* ==========================================================================
+   Nav active link
+   ========================================================================== */
+
+.nav__link--active {
+    color: var(--color-accent);
+}
