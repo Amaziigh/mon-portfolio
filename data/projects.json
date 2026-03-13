@@ -1,16 +1,40 @@
 {
   "projects": [
     {
-      "name": "mon-portfolio",
-      "description": "Portfolio développeur — HTML/CSS/JS vanilla.",
-      "tags": ["HTML", "CSS", "JavaScript"],
-      "url": "https://github.com/Amaziigh/mon-portfolio"
+      "name": "Migration E.Leclerc (Galec)",
+      "description": "Migration serveur interne vers Google Drive pour la centrale d'achat E.Leclerc. Outil de migration sur mesure développé en PowerShell avec l'IA, accompagnement équipe par équipe, transformation des usages Microsoft vers Google.",
+      "tags": ["Google Workspace", "Migration", "PowerShell", "IA", "Formation"],
+      "url": null
     },
     {
-      "name": "mon-premier-rag",
-      "description": "Premier projet de Retrieval-Augmented Generation en Python.",
-      "tags": ["Python"],
+      "name": "ERP Artisol sur AppSheet",
+      "description": "ERP complet construit de zéro sur AppSheet pour une entreprise d'isolation thermique. Modules production, commerce, devis automatiques, gestion de stock, planning chantiers.",
+      "tags": ["AppSheet", "Apps Script", "Google Sheets", "Google Docs", "ERP"],
+      "url": null
+    },
+    {
+      "name": "DGE Production — Web App & IA",
+      "description": "Application web Apps Script en production pour un fabricant de vêtements de sport (100+ salariés). Gestion des BAT, suivi de fabrication. Intégration IA Gemini pour génération de maillots 3D à partir de mockups.",
+      "tags": ["Apps Script", "Web App", "Gemini", "IA", "Production"],
+      "url": "https://www.dgeproduction.fr/"
+    },
+    {
+      "name": "Transformation digitale BIZEBIKE",
+      "description": "Transformation digitale complète d'une startup de vélos électriques à Paris. CRM, dashboards commerciaux, générateur de factures PDF, applications AppSheet, automatisations Apps Script. DSI externalisé depuis 2020.",
+      "tags": ["Google Workspace", "Apps Script", "AppSheet", "CRM", "Dashboard"],
+      "url": "https://www.bizebike.com/"
+    },
+    {
+      "name": "Assistant IA RAG",
+      "description": "Système de Retrieval-Augmented Generation déployé sur Google Cloud Run. Interrogez ma base documentaire en langage naturel — intégré directement à ce portfolio.",
+      "tags": ["Python", "RAG", "Cloud Run", "IA"],
       "url": "https://github.com/Amaziigh/mon-premier-rag"
+    },
+    {
+      "name": "Google Workspace CLI + IA",
+      "description": "Exploration et intégration du CLI Google Workspace pour piloter Drive, Gmail, Sheets et Calendar par agents IA. Workflow automatisé : extraction de factures → classement Drive → tableau Sheets.",
+      "tags": ["Google Workspace", "CLI", "IA", "Automatisation"],
+      "url": "https://github.com/googleworkspace/cli"
     }
   ]
 }

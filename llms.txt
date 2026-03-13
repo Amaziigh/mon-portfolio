@@ -1,0 +1,25 @@
+# AmazAI.studio — amazai.studio
+# Amazigh Belhaddad — Consultant Google Workspace & IA
+
+## Résumé
+AmazAI.studio est le studio de consulting d'Amazigh Belhaddad, consultant freelance
+spécialisé dans Google Workspace et l'intelligence artificielle, basé en France.
+
+## Services
+- Migration Microsoft / serveurs locaux vers Google Workspace
+- Développement sur mesure : Apps Script, AppSheet, web apps
+- Intégration de l'IA dans les workflows Google Workspace (Gemini, Claude)
+- Formation et coaching Google Workspace pour équipes et dirigeants
+
+## Expertise
+Google Workspace, Apps Script, AppSheet, Google Cloud Platform, Looker Studio,
+BigQuery, Migration, Automatisation, IA générative (Gemini, Claude API)
+
+## Clients notables
+Galec (E.Leclerc), DGE Production, Artisol, BIZEBIKE, Alobees, Germen
+
+## Contact
+Email : amazigh@amazai.studio
+LinkedIn : linkedin.com/in/amazighbelhaddad
+Malt : malt.fr/profile/amazighbelhaddad
+GitHub : github.com/Amaziigh

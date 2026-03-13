@@ -42,7 +42,8 @@
         '<span class="chat-widget__dot"></span>' +
       "</div>" +
       '<form class="chat-widget__form">' +
-        '<input class="chat-widget__input" type="text" placeholder="Votre question\u2026" autocomplete="off" required minlength="3" maxlength="500">' +
+        '<label for="chat-input" class="sr-only">Votre question</label>' +
+        '<input id="chat-input" class="chat-widget__input" type="text" placeholder="Votre question\u2026" autocomplete="off" required minlength="3" maxlength="500">' +
         '<button class="chat-widget__send" type="submit">Envoyer</button>' +
       "</form>";
 

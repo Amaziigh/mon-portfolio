@@ -8,7 +8,7 @@
     --color-text: #e0e0e0;
     --color-accent: #5ce0c6;
     --color-accent-alpha: rgba(92, 224, 198, 0.1);
-    --color-text-muted: #9ca3bd;
+    --color-text-muted: #b0b8d0;
     --color-card-bg: rgba(255, 255, 255, 0.05);
     --color-border: rgba(255, 255, 255, 0.15);
     --color-header-bg: rgba(10, 10, 10, 0.85);
@@ -649,7 +649,6 @@ section {
     padding: var(--spacing-lg) var(--spacing-md);
     text-align: center;
     border-top: 1px solid var(--color-border);
-    opacity: var(--opacity-muted);
     transition: border-color var(--transition-base);
 }
 
@@ -936,4 +935,241 @@ section {
     .blog__list {
         grid-template-columns: repeat(2, 1fr);
     }
+
+    .services__grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* ==========================================================================
+   Services
+   ========================================================================== */
+
+.services {
+    padding: var(--spacing-xl) var(--spacing-md);
+    max-width: var(--max-width-content);
+    margin: 0 auto;
+}
+
+.services__grid {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: var(--spacing-md);
+    margin-top: var(--spacing-lg);
+}
+
+.service-card {
+    background-color: var(--color-card-bg);
+    border-radius: var(--radius-md);
+    padding: var(--spacing-md);
+    box-shadow: var(--shadow-sm);
+    transition: transform var(--transition-base), box-shadow var(--transition-base), background-color var(--transition-base);
+}
+
+.service-card:hover {
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-lg);
+}
+
+.service-card__title {
+    color: var(--color-accent);
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--spacing-sm);
+    transition: color var(--transition-base);
+}
+
+.service-card__description {
+    color: var(--color-text-muted);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-normal);
+    margin-bottom: var(--spacing-sm);
+    transition: color var(--transition-base);
+}
+
+.service-card__clients {
+    color: var(--color-text-muted);
+    font-size: var(--font-size-sm);
+    font-style: italic;
+    opacity: 0.8;
+    transition: color var(--transition-base);
+}
+
+/* ==========================================================================
+   Parcours — Timeline
+   ========================================================================== */
+
+.parcours {
+    padding: var(--spacing-xl) var(--spacing-md);
+    max-width: var(--max-width-medium);
+    margin: 0 auto;
+}
+
+.timeline {
+    position: relative;
+    margin-top: var(--spacing-lg);
+    padding-left: var(--spacing-md);
+    border-left: 2px solid var(--color-border);
+}
+
+.timeline__item {
+    position: relative;
+    margin-bottom: var(--spacing-lg);
+}
+
+.timeline__item::before {
+    content: '';
+    position: absolute;
+    left: calc(-1 * var(--spacing-md) - 5px);
+    top: 0.4rem;
+    width: 10px;
+    height: 10px;
+    background-color: var(--color-accent);
+    border-radius: 50%;
+}
+
+.timeline__date {
+    display: inline-block;
+    color: var(--color-accent);
+    font-size: var(--font-size-sm);
+    font-weight: var(--font-weight-semibold);
+    margin-bottom: var(--spacing-xs);
+}
+
+.timeline__title {
+    color: var(--color-text);
+    font-size: var(--font-size-xl);
+    margin-bottom: var(--spacing-xs);
+    transition: color var(--transition-base);
+}
+
+.timeline__details {
+    list-style: none;
+    padding: 0;
+    color: var(--color-text-muted);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-relaxed);
+    transition: color var(--transition-base);
+}
+
+.timeline__details li {
+    padding-left: 1.2rem;
+    position: relative;
+    margin-bottom: 0.25rem;
+}
+
+.timeline__details li::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    top: 0.6em;
+    width: 6px;
+    height: 6px;
+    background-color: var(--color-accent);
+    border-radius: 50%;
+}
+
+/* ==========================================================================
+   Stack technique
+   ========================================================================== */
+
+.stack {
+    margin-top: var(--spacing-xl);
+}
+
+.stack__title {
+    color: var(--color-text);
+    font-size: var(--font-size-2xl);
+    margin-bottom: var(--spacing-md);
+    text-align: center;
+    transition: color var(--transition-base);
+}
+
+.stack__list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: var(--spacing-xs);
+    list-style: none;
+    padding: 0;
+}
+
+.stack__tag {
+    background-color: var(--color-accent-alpha);
+    color: var(--color-accent);
+    padding: 0.4rem 1rem;
+    border-radius: var(--radius-sm);
+    font-size: var(--font-size-sm);
+    transition: background-color var(--transition-base), color var(--transition-base);
+}
+
+/* ==========================================================================
+   Nav active link
+   ========================================================================== */
+
+.nav__link--active {
+    color: var(--color-accent);
+}
+
+/* ==========================================================================
+   CTA Banner — Assistant IA
+   ========================================================================== */
+
+.cta-banner {
+    margin-top: var(--spacing-lg);
+    padding: var(--spacing-md);
+    border: 1px solid var(--color-accent);
+    border-radius: var(--radius-md);
+    background-color: var(--color-accent-alpha);
+    text-align: center;
+}
+
+.cta-banner__text {
+    color: var(--color-text);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-normal);
+    margin-bottom: var(--spacing-sm);
+    transition: color var(--transition-base);
+}
+
+.cta-banner__button {
+    display: inline-block;
+    padding: 0.6rem 1.5rem;
+    background-color: var(--color-accent);
+    color: #0a0a0a;
+    border: none;
+    border-radius: var(--radius-sm);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+    cursor: pointer;
+    transition: opacity var(--transition-fast);
+}
+
+.cta-banner__button:hover {
+    opacity: 0.85;
+}
+
+.cta-banner--compact {
+    margin-top: var(--spacing-md);
+    padding: var(--spacing-sm) var(--spacing-md);
+}
+
+.cta-banner--compact .cta-banner__text {
+    margin-bottom: 0;
+    font-size: var(--font-size-sm);
+}
+
+.cta-banner__link {
+    background: none;
+    border: none;
+    color: var(--color-accent);
+    font-size: inherit;
+    font-weight: var(--font-weight-semibold);
+    cursor: pointer;
+    text-decoration: underline;
+    padding: 0;
+    transition: opacity var(--transition-fast);
+}
+
+.cta-banner__link:hover {
+    opacity: 0.85;
 }
