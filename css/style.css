@@ -8,7 +8,7 @@
     --color-text: #e0e0e0;
     --color-accent: #5ce0c6;
     --color-accent-alpha: rgba(92, 224, 198, 0.1);
-    --color-text-muted: #9ca3bd;
+    --color-text-muted: #b0b8d0;
     --color-card-bg: rgba(255, 255, 255, 0.05);
     --color-border: rgba(255, 255, 255, 0.15);
     --color-header-bg: rgba(10, 10, 10, 0.85);
@@ -649,7 +649,6 @@ section {
     padding: var(--spacing-lg) var(--spacing-md);
     text-align: center;
     border-top: 1px solid var(--color-border);
-    opacity: var(--opacity-muted);
     transition: border-color var(--transition-base);
 }
 
@@ -1053,16 +1052,20 @@ section {
 }
 
 .timeline__details li {
-    padding-left: 1rem;
+    padding-left: 1.2rem;
     position: relative;
     margin-bottom: 0.25rem;
 }
 
 .timeline__details li::before {
-    content: '—';
+    content: '';
     position: absolute;
     left: 0;
-    color: var(--color-accent);
+    top: 0.6em;
+    width: 6px;
+    height: 6px;
+    background-color: var(--color-accent);
+    border-radius: 50%;
 }
 
 /* ==========================================================================
