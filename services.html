@@ -60,6 +60,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/chat-widget.css">
 </head>
 <body>
     <a href="#main" class="skip-link">Aller au contenu principal</a>
@@ -143,6 +144,15 @@
                 </article>
 
             </div>
+
+            <div class="cta-banner cta-banner--compact">
+                <p class="cta-banner__text">
+                    Une question sur mes prestations ?
+                    <button class="cta-banner__link" onclick="document.querySelector('.chat-widget__toggle').click()">
+                        Demandez à mon assistant IA
+                    </button>
+                </p>
+            </div>
         </section>
     </main>
 
@@ -156,5 +166,6 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="js/chat-widget.js" data-api="https://rag-api-520688141231.europe-west1.run.app"></script>
 </body>
 </html>

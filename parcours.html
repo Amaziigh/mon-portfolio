@@ -26,6 +26,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/chat-widget.css">
 </head>
 <body>
     <a href="#main" class="skip-link">Aller au contenu principal</a>
@@ -112,6 +113,16 @@
 
             </div>
 
+            <div class="cta-banner">
+                <p class="cta-banner__text">
+                    Vous voulez en savoir plus sur une mission, une technologie ou mon parcours ?
+                    Mon assistant IA connaît toute mon histoire. Posez-lui vos questions !
+                </p>
+                <button class="cta-banner__button" onclick="document.querySelector('.chat-widget__toggle').click()">
+                    Discuter avec l'assistant IA
+                </button>
+            </div>
+
             <section class="stack">
                 <h2 class="stack__title">Stack technique</h2>
                 <ul class="stack__list">
@@ -141,5 +152,6 @@
     </footer>
 
     <script src="js/main.js"></script>
+    <script src="js/chat-widget.js" data-api="https://rag-api-520688141231.europe-west1.run.app"></script>
 </body>
 </html>

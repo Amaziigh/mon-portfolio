@@ -1109,3 +1109,67 @@ section {
 .nav__link--active {
     color: var(--color-accent);
 }
+
+/* ==========================================================================
+   CTA Banner — Assistant IA
+   ========================================================================== */
+
+.cta-banner {
+    margin-top: var(--spacing-lg);
+    padding: var(--spacing-md);
+    border: 1px solid var(--color-accent);
+    border-radius: var(--radius-md);
+    background-color: var(--color-accent-alpha);
+    text-align: center;
+}
+
+.cta-banner__text {
+    color: var(--color-text);
+    font-size: var(--font-size-base);
+    line-height: var(--line-height-normal);
+    margin-bottom: var(--spacing-sm);
+    transition: color var(--transition-base);
+}
+
+.cta-banner__button {
+    display: inline-block;
+    padding: 0.6rem 1.5rem;
+    background-color: var(--color-accent);
+    color: #0a0a0a;
+    border: none;
+    border-radius: var(--radius-sm);
+    font-size: var(--font-size-base);
+    font-weight: var(--font-weight-semibold);
+    cursor: pointer;
+    transition: opacity var(--transition-fast);
+}
+
+.cta-banner__button:hover {
+    opacity: 0.85;
+}
+
+.cta-banner--compact {
+    margin-top: var(--spacing-md);
+    padding: var(--spacing-sm) var(--spacing-md);
+}
+
+.cta-banner--compact .cta-banner__text {
+    margin-bottom: 0;
+    font-size: var(--font-size-sm);
+}
+
+.cta-banner__link {
+    background: none;
+    border: none;
+    color: var(--color-accent);
+    font-size: inherit;
+    font-weight: var(--font-weight-semibold);
+    cursor: pointer;
+    text-decoration: underline;
+    padding: 0;
+    transition: opacity var(--transition-fast);
+}
+
+.cta-banner__link:hover {
+    opacity: 0.85;
+}
